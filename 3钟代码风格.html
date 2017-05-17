@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>代码</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+
+<body>
+
+<!-- 
+在Bootstrap主要提供了三种代码风格：
+	1、使用<code></code>来显示单行内联代码
+	2、使用<pre></pre>来显示多行块代码
+	3、使用<kbd></kbd>来显示用户输入代码,一般是表示用户要通过键盘输入的内容
+ -->
+
+<!-- 
+	在pre标签上添加类名“.pre-scrollable”，就可以控制代码块区域最大高度为340px，一旦超出这个高度，就会在Y轴出现滚动条。
+	.pre-scrollable {
+	max-height: 340px;
+	overflow-y: scroll;
+	}
+ -->
+
+code风格：
+<div>Bootstrap的代码风格有三种：<code>&lt;code&gt;</code>、<code>&lt;pre&gt;</code>和<code>&lt;kbd&gt;</code></div>
+pre风格：
+<div>
+<pre>
+&lt;ul&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</div>
+kbd风格：
+<div>请输入<kbd>ctrl+c</kbd>来复制代码，然后使用<kbd>ctrl+v</kbd>来粘贴代码</div>
+
+
+<!--下面是代码任务部分-->
+
+<p>请使用ctrl+x复制代码，然后使用ctrl+shift+v将复制的代码粘贴到需要的地方。</p>
+
+<pre class="pre-scrollable">
+<ol>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+    <li>....</li>
+</ol>
+</pre>
+</body>
+</html>

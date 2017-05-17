@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>基础表格</title>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+</head>
+
+<body>
+<h1>基础表格</h1>
+<!-- 
+    Bootstrap为表格提供了1种基础样式和4种附加样式以及1个支持响应式的表格
+
+    千万注意，你的<table>元素中一定不能缺少类名“table”
+      .table：基础表格
+          1、给表格设置了margin-bottom:20px以及设置单元内距
+          2、在thead底部设置了一个2px的浅灰实线
+          3、每个单元格顶部设置了一个1px的浅灰实线
+
+      .table-striped：斑马线表格
+          .table-striped > tbody > tr:nth-child(odd) > td,
+          .table-striped > tbody > tr:nth-child(odd) > th {
+          background-color: #f9f9f9;
+          }
+
+      .table-bordered：带边框的表格
+          .table-bordered {
+            border: 1px solid #ddd;/*整个表格设置边框*/
+          }
+          .table-bordered > thead > tr > th,
+          .table-bordered > tbody > tr > th,
+          .table-bordered > tfoot > tr > th,
+          .table-bordered > thead > tr > td,
+          .table-bordered > tbody > tr > td,
+          .table-bordered > tfoot > tr > td {
+            border: 1px solid #ddd; /*每个单元格设置边框*/
+          }
+          .table-bordered > thead > tr > th,
+          .table-bordered > thead > tr > td {
+            border-bottom-width: 2px;/*表头底部边框*/
+          }
+
+      .table-hover：鼠标悬停高亮的表格
+          .table-hover > tbody > tr:hover > td,
+          .table-hover > tbody > tr:hover > th {
+          background-color: #f5f5f5;
+          }
+
+      .table-condensed：紧凑型表格
+          .table-condensed > thead > tr > th,
+          .table-condensed > tbody > tr > th,
+          .table-condensed > tfoot > tr > th,
+          .table-condensed > thead > tr > td,
+          .table-condensed > tbody > tr > td,
+          .table-condensed > tfoot > tr > td {
+          padding: 5px;
+          }
+
+      .table-responsive：响应式表格
+          Bootstrap提供了一个容器，并且此容器设置类名“.table-responsive”,此容器就具有响应式效果，然后将<table class="table">置于这个容器当中，这样表格也就具有响应式效果，如
+          <div class="table-responsive">
+            <table class="table table-bordered">
+               …
+            </table>
+          </div>
+ -->
+
+<table class="table">
+   <thead>
+     <tr>
+       <th>表格标题</th>
+       <th>表格标题</th>
+       <th>表格标题</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+   </tbody>
+ </table>
+<h1>斑马线表格</h1>
+<table class="table table-striped">
+   <thead>
+     <tr>
+       <th>表格标题</th>
+       <th>表格标题</th>
+       <th>表格标题</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+   </tbody>
+ </table>
+<h1>带边框的表格</h1>
+ <table class="table table-bordered">
+   <thead>
+     <tr>
+       <th>表格标题</th>
+       <th>表格标题</th>
+       <th>表格标题</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+   </tbody>
+ </table>
+<h1>鼠标悬浮高亮的表格</h1>
+<table class="table table-striped table-bordered table-hover">
+   <thead>
+     <tr>
+       <th>表格标题</th>
+       <th>表格标题</th>
+       <th>表格标题</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+   </tbody>
+ </table>
+ <h1>紧凑型表格</h1>
+  <table class="table table-condensed">
+   <thead>
+     <tr>
+       <th>表格标题</th>
+       <th>表格标题</th>
+       <th>表格标题</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+   </tbody>
+ </table>
+ <h1>响应式表格</h1>
+ <div class="table-responsive">
+   <table class="table table-bordered">
+   <thead>
+     <tr>
+       <th>表格标题</th>
+       <th>表格标题</th>
+       <th>表格标题</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+     <tr>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+       <td>表格单元格</td>
+     </tr>
+   </tbody>
+ </table>
+</div>
+</body>
+</html>
